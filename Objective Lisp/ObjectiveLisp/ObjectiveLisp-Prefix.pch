@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ObjectiveLisp' target in the 'ObjectiveLisp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

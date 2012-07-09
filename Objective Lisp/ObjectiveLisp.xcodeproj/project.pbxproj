@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A714868815AAA1AD004A57E5 /* OLBool.m in Sources */ = {isa = PBXBuildFile; fileRef = A714868715AAA1AD004A57E5 /* OLBool.m */; };
+		A714868B15AAA355004A57E5 /* OLNamespace.m in Sources */ = {isa = PBXBuildFile; fileRef = A714868A15AAA355004A57E5 /* OLNamespace.m */; };
+		A714868E15AAA57D004A57E5 /* OLCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A714868D15AAA57D004A57E5 /* OLCore.m */; };
+		A714869115AAA77D004A57E5 /* OLInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = A714869015AAA77C004A57E5 /* OLInteger.m */; };
+		A714869415AAA790004A57E5 /* OLDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = A714869315AAA790004A57E5 /* OLDouble.m */; };
+		A7584B3515AA39C700BF6F30 /* OLEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B3415AA39C700BF6F30 /* OLEntity.m */; };
+		A7584B3815AA39D300BF6F30 /* OLValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B3715AA39D300BF6F30 /* OLValue.m */; };
+		A7584B3B15AA39E000BF6F30 /* OLSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B3A15AA39E000BF6F30 /* OLSymbol.m */; };
+		A7584B3E15AA3A0400BF6F30 /* OLFn.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B3D15AA3A0300BF6F30 /* OLFn.m */; };
+		A7584B4415AA3A2100BF6F30 /* OLString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B4315AA3A2100BF6F30 /* OLString.m */; };
+		A7584B4715AA3A5900BF6F30 /* OLNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B4615AA3A5900BF6F30 /* OLNumber.m */; };
+		A7584B5415AA3ACF00BF6F30 /* OLList.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B5315AA3ACF00BF6F30 /* OLList.m */; };
+		A7584B5E15AA3B2D00BF6F30 /* OLArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B5D15AA3B2C00BF6F30 /* OLArray.m */; };
+		A7584B6115AA3B3800BF6F30 /* OLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B6015AA3B3800BF6F30 /* OLDictionary.m */; };
+		A7584B7115AA6D1C00BF6F30 /* OLForm.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B7015AA6D1C00BF6F30 /* OLForm.m */; };
+		A7584B7515AA7A0900BF6F30 /* OLREPL.m in Sources */ = {isa = PBXBuildFile; fileRef = A7584B7415AA7A0900BF6F30 /* OLREPL.m */; };
+		A7A7BDBB15A8CEE000446912 /* OLCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A7BDBA15A8CEE000446912 /* OLCompiler.m */; };
+		A7B6491915A93D1E003464C0 /* OLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B6491815A93D1E003464C0 /* OLRuntime.m */; };
+		A7B6491D15A93D30003464C0 /* OLEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B6491C15A93D30003464C0 /* OLEnvironment.m */; };
+		A7BAEF5215A8F0320086C129 /* NSString+CharacterUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BAEF5115A8F0320086C129 /* NSString+CharacterUtility.m */; };
+		A7C7731815A7F8050069C230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C7731715A7F8050069C230 /* Foundation.framework */; };
+		A7C7731B15A7F8050069C230 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7731A15A7F8050069C230 /* main.m */; };
+		A7C7731F15A7F8050069C230 /* ObjectiveLisp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7C7731E15A7F8050069C230 /* ObjectiveLisp.1 */; };
+		A7C7733E15A805010069C230 /* OLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7733D15A805010069C230 /* OLParser.m */; };
+		A7C7734415A805EA0069C230 /* OLSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7734315A805EA0069C230 /* OLSource.m */; };
+		A7C7734715A80DE20069C230 /* OLScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7734615A80DE20069C230 /* OLScanner.m */; };
+		A7C7734A15A80DEB0069C230 /* OLToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7734915A80DEB0069C230 /* OLToken.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7C7731115A7F8050069C230 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				A7C7731F15A7F8050069C230 /* ObjectiveLisp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A714868615AAA1AD004A57E5 /* OLBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLBool.h; sourceTree = "<group>"; };
+		A714868715AAA1AD004A57E5 /* OLBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLBool.m; sourceTree = "<group>"; };
+		A714868915AAA355004A57E5 /* OLNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLNamespace.h; sourceTree = "<group>"; };
+		A714868A15AAA355004A57E5 /* OLNamespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLNamespace.m; sourceTree = "<group>"; };
+		A714868C15AAA57D004A57E5 /* OLCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLCore.h; sourceTree = "<group>"; };
+		A714868D15AAA57D004A57E5 /* OLCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLCore.m; sourceTree = "<group>"; };
+		A714868F15AAA77C004A57E5 /* OLInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLInteger.h; sourceTree = "<group>"; };
+		A714869015AAA77C004A57E5 /* OLInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLInteger.m; sourceTree = "<group>"; };
+		A714869215AAA790004A57E5 /* OLDouble.h */ = {isa = PBXFileReference; fileEncoding = 4; path = OLDouble.h; sourceTree = "<group>"; };
+		A714869315AAA790004A57E5 /* OLDouble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLDouble.m; sourceTree = "<group>"; };
+		A7584B3315AA39C700BF6F30 /* OLEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLEntity.h; sourceTree = "<group>"; };
+		A7584B3415AA39C700BF6F30 /* OLEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLEntity.m; sourceTree = "<group>"; };
+		A7584B3615AA39D300BF6F30 /* OLValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLValue.h; sourceTree = "<group>"; };
+		A7584B3715AA39D300BF6F30 /* OLValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLValue.m; sourceTree = "<group>"; };
+		A7584B3915AA39E000BF6F30 /* OLSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSymbol.h; sourceTree = "<group>"; };
+		A7584B3A15AA39E000BF6F30 /* OLSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSymbol.m; sourceTree = "<group>"; };
+		A7584B3C15AA3A0300BF6F30 /* OLFn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLFn.h; sourceTree = "<group>"; };
+		A7584B3D15AA3A0300BF6F30 /* OLFn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLFn.m; sourceTree = "<group>"; };
+		A7584B3F15AA3A1100BF6F30 /* OLCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLCollection.h; sourceTree = "<group>"; };
+		A7584B4215AA3A2100BF6F30 /* OLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLString.h; sourceTree = "<group>"; };
+		A7584B4315AA3A2100BF6F30 /* OLString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLString.m; sourceTree = "<group>"; };
+		A7584B4515AA3A5900BF6F30 /* OLNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLNumber.h; sourceTree = "<group>"; };
+		A7584B4615AA3A5900BF6F30 /* OLNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLNumber.m; sourceTree = "<group>"; };
+		A7584B5215AA3ACF00BF6F30 /* OLList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLList.h; sourceTree = "<group>"; };
+		A7584B5315AA3ACF00BF6F30 /* OLList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLList.m; sourceTree = "<group>"; };
+		A7584B5815AA3B1200BF6F30 /* OLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLObject.h; sourceTree = "<group>"; };
+		A7584B5C15AA3B2C00BF6F30 /* OLArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLArray.h; sourceTree = "<group>"; };
+		A7584B5D15AA3B2C00BF6F30 /* OLArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLArray.m; sourceTree = "<group>"; };
+		A7584B5F15AA3B3800BF6F30 /* OLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLDictionary.h; sourceTree = "<group>"; };
+		A7584B6015AA3B3800BF6F30 /* OLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLDictionary.m; sourceTree = "<group>"; };
+		A7584B6F15AA6D1C00BF6F30 /* OLForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLForm.h; sourceTree = "<group>"; };
+		A7584B7015AA6D1C00BF6F30 /* OLForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLForm.m; sourceTree = "<group>"; };
+		A7584B7215AA748E00BF6F30 /* OLSpecialForms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLSpecialForms.h; sourceTree = "<group>"; };
+		A7584B7315AA7A0900BF6F30 /* OLREPL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLREPL.h; sourceTree = "<group>"; };
+		A7584B7415AA7A0900BF6F30 /* OLREPL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLREPL.m; sourceTree = "<group>"; };
+		A76CF2A715A91AF90080C07F /* OLLang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLLang.h; sourceTree = "<group>"; };
+		A7A7BDB915A8CEDF00446912 /* OLCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLCompiler.h; sourceTree = "<group>"; };
+		A7A7BDBA15A8CEE000446912 /* OLCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLCompiler.m; sourceTree = "<group>"; };
+		A7B6491715A93D1E003464C0 /* OLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLRuntime.h; sourceTree = "<group>"; };
+		A7B6491815A93D1E003464C0 /* OLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLRuntime.m; sourceTree = "<group>"; };
+		A7B6491B15A93D30003464C0 /* OLEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLEnvironment.h; sourceTree = "<group>"; };
+		A7B6491C15A93D30003464C0 /* OLEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLEnvironment.m; sourceTree = "<group>"; };
+		A7BAEF5015A8F0320086C129 /* NSString+CharacterUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CharacterUtility.h"; sourceTree = "<group>"; };
+		A7BAEF5115A8F0320086C129 /* NSString+CharacterUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CharacterUtility.m"; sourceTree = "<group>"; };
+		A7C7731315A7F8050069C230 /* ObjectiveLisp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveLisp; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C7731715A7F8050069C230 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A7C7731A15A7F8050069C230 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ObjectiveLisp/main.m; sourceTree = "<group>"; };
+		A7C7731D15A7F8050069C230 /* ObjectiveLisp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveLisp-Prefix.pch"; sourceTree = "<group>"; };
+		A7C7731E15A7F8050069C230 /* ObjectiveLisp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ObjectiveLisp.1; sourceTree = "<group>"; };
+		A7C7733C15A805010069C230 /* OLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLParser.h; path = "objective-lisp/comp/OLParser.h"; sourceTree = "<group>"; };
+		A7C7733D15A805010069C230 /* OLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLParser.m; path = "objective-lisp/comp/OLParser.m"; sourceTree = "<group>"; };
+		A7C7734215A805EA0069C230 /* OLSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSource.h; sourceTree = "<group>"; };
+		A7C7734315A805EA0069C230 /* OLSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSource.m; sourceTree = "<group>"; };
+		A7C7734515A80DE20069C230 /* OLScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLScanner.h; sourceTree = "<group>"; };
+		A7C7734615A80DE20069C230 /* OLScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLScanner.m; sourceTree = "<group>"; };
+		A7C7734815A80DEB0069C230 /* OLToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLToken.h; sourceTree = "<group>"; };
+		A7C7734915A80DEB0069C230 /* OLToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLToken.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7C7731015A7F8050069C230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C7731815A7F8050069C230 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7584B5015AA3A9800BF6F30 /* OLValue */ = {
+			isa = PBXGroup;
+			children = (
+				A7584B3615AA39D300BF6F30 /* OLValue.h */,
+				A7584B3715AA39D300BF6F30 /* OLValue.m */,
+				A7584B3C15AA3A0300BF6F30 /* OLFn.h */,
+				A7584B3D15AA3A0300BF6F30 /* OLFn.m */,
+				A7584B5715AA3B0600BF6F30 /* OLObject */,
+			);
+			name = OLValue;
+			sourceTree = "<group>";
+		};
+		A7584B5115AA3ABE00BF6F30 /* OLTypes */ = {
+			isa = PBXGroup;
+			children = (
+				A7584B3315AA39C700BF6F30 /* OLEntity.h */,
+				A7584B3415AA39C700BF6F30 /* OLEntity.m */,
+				A7584B5615AA3ADD00BF6F30 /* OLList */,
+				A7584B5515AA3AD300BF6F30 /* OLSymbol */,
+				A7584B5015AA3A9800BF6F30 /* OLValue */,
+			);
+			name = OLTypes;
+			sourceTree = "<group>";
+		};
+		A7584B5515AA3AD300BF6F30 /* OLSymbol */ = {
+			isa = PBXGroup;
+			children = (
+				A7584B3915AA39E000BF6F30 /* OLSymbol.h */,
+				A7584B3A15AA39E000BF6F30 /* OLSymbol.m */,
+			);
+			name = OLSymbol;
+			sourceTree = "<group>";
+		};
+		A7584B5615AA3ADD00BF6F30 /* OLList */ = {
+			isa = PBXGroup;
+			children = (
+				A7584B5215AA3ACF00BF6F30 /* OLList.h */,
+				A7584B5315AA3ACF00BF6F30 /* OLList.m */,
+			);
+			name = OLList;
+			sourceTree = "<group>";
+		};
+		A7584B5715AA3B0600BF6F30 /* OLObject */ = {
+			isa = PBXGroup;
+			children = (
+				A7584B5815AA3B1200BF6F30 /* OLObject.h */,
+				A7584B4215AA3A2100BF6F30 /* OLString.h */,
+				A7584B4315AA3A2100BF6F30 /* OLString.m */,
+				A7584B4515AA3A5900BF6F30 /* OLNumber.h */,
+				A7584B4615AA3A5900BF6F30 /* OLNumber.m */,
+				A714868F15AAA77C004A57E5 /* OLInteger.h */,
+				A714869015AAA77C004A57E5 /* OLInteger.m */,
+				A714869215AAA790004A57E5 /* OLDouble.h */,
+				A714869315AAA790004A57E5 /* OLDouble.m */,
+				A714868615AAA1AD004A57E5 /* OLBool.h */,
+				A714868715AAA1AD004A57E5 /* OLBool.m */,
+				A7584B5B15AA3B2100BF6F30 /* OLCollection */,
+			);
+			name = OLObject;
+			sourceTree = "<group>";
+		};
+		A7584B5B15AA3B2100BF6F30 /* OLCollection */ = {
+			isa = PBXGroup;
+			children = (
+				A7584B3F15AA3A1100BF6F30 /* OLCollection.h */,
+				A7584B5C15AA3B2C00BF6F30 /* OLArray.h */,
+				A7584B5D15AA3B2C00BF6F30 /* OLArray.m */,
+				A7584B5F15AA3B3800BF6F30 /* OLDictionary.h */,
+				A7584B6015AA3B3800BF6F30 /* OLDictionary.m */,
+			);
+			name = OLCollection;
+			sourceTree = "<group>";
+		};
+		A7BAEF5315A8F0360086C129 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				A7BAEF5015A8F0320086C129 /* NSString+CharacterUtility.h */,
+				A7BAEF5115A8F0320086C129 /* NSString+CharacterUtility.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		A7C7730815A7F8040069C230 = {
+			isa = PBXGroup;
+			children = (
+				A7C7731A15A7F8050069C230 /* main.m */,
+				A7584B7315AA7A0900BF6F30 /* OLREPL.h */,
+				A7584B7415AA7A0900BF6F30 /* OLREPL.m */,
+				A7C7731915A7F8050069C230 /* ObjectiveLisp */,
+				A7C7731C15A7F8050069C230 /* Supporting Files */,
+				A7C7731615A7F8050069C230 /* Frameworks */,
+				A7C7731415A7F8050069C230 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7C7731415A7F8050069C230 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7C7731315A7F8050069C230 /* ObjectiveLisp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7C7731615A7F8050069C230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C7731715A7F8050069C230 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7C7731915A7F8050069C230 /* ObjectiveLisp */ = {
+			isa = PBXGroup;
+			children = (
+				A7C7733515A7FD9C0069C230 /* runtime */,
+				A7C7732715A7F8440069C230 /* comp */,
+				A7C7732615A7F8400069C230 /* core */,
+				A7C7732515A7F8320069C230 /* lang */,
+				A7BAEF5315A8F0360086C129 /* util */,
+			);
+			path = ObjectiveLisp;
+			sourceTree = "<group>";
+		};
+		A7C7731C15A7F8050069C230 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7C7731E15A7F8050069C230 /* ObjectiveLisp.1 */,
+				A7C7731D15A7F8050069C230 /* ObjectiveLisp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = ObjectiveLisp;
+			sourceTree = "<group>";
+		};
+		A7C7732515A7F8320069C230 /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				A76CF2A715A91AF90080C07F /* OLLang.h */,
+				A714868915AAA355004A57E5 /* OLNamespace.h */,
+				A714868A15AAA355004A57E5 /* OLNamespace.m */,
+				A7584B5115AA3ABE00BF6F30 /* OLTypes */,
+			);
+			name = lang;
+			sourceTree = "<group>";
+		};
+		A7C7732615A7F8400069C230 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A714868C15AAA57D004A57E5 /* OLCore.h */,
+				A714868D15AAA57D004A57E5 /* OLCore.m */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		A7C7732715A7F8440069C230 /* comp */ = {
+			isa = PBXGroup;
+			children = (
+				A7A7BDB915A8CEDF00446912 /* OLCompiler.h */,
+				A7A7BDBA15A8CEE000446912 /* OLCompiler.m */,
+				A7C7733C15A805010069C230 /* OLParser.h */,
+				A7C7733D15A805010069C230 /* OLParser.m */,
+				A7C7734515A80DE20069C230 /* OLScanner.h */,
+				A7C7734615A80DE20069C230 /* OLScanner.m */,
+				A7C7734215A805EA0069C230 /* OLSource.h */,
+				A7C7734315A805EA0069C230 /* OLSource.m */,
+				A7C7734815A80DEB0069C230 /* OLToken.h */,
+				A7C7734915A80DEB0069C230 /* OLToken.m */,
+			);
+			name = comp;
+			sourceTree = "<group>";
+		};
+		A7C7733515A7FD9C0069C230 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				A7B6491B15A93D30003464C0 /* OLEnvironment.h */,
+				A7B6491C15A93D30003464C0 /* OLEnvironment.m */,
+				A7584B7215AA748E00BF6F30 /* OLSpecialForms.h */,
+				A7B6491715A93D1E003464C0 /* OLRuntime.h */,
+				A7B6491815A93D1E003464C0 /* OLRuntime.m */,
+				A7584B6F15AA6D1C00BF6F30 /* OLForm.h */,
+				A7584B7015AA6D1C00BF6F30 /* OLForm.m */,
+			);
+			name = runtime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7C7731215A7F8050069C230 /* ObjectiveLisp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C7732215A7F8050069C230 /* Build configuration list for PBXNativeTarget "ObjectiveLisp" */;
+			buildPhases = (
+				A7C7730F15A7F8050069C230 /* Sources */,
+				A7C7731015A7F8050069C230 /* Frameworks */,
+				A7C7731115A7F8050069C230 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveLisp;
+			productName = ObjectiveLisp;
+			productReference = A7C7731315A7F8050069C230 /* ObjectiveLisp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7C7730A15A7F8040069C230 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Romotive;
+			};
+			buildConfigurationList = A7C7730D15A7F8040069C230 /* Build configuration list for PBXProject "ObjectiveLisp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A7C7730815A7F8040069C230;
+			productRefGroup = A7C7731415A7F8050069C230 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7C7731215A7F8050069C230 /* ObjectiveLisp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7C7730F15A7F8050069C230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C7731B15A7F8050069C230 /* main.m in Sources */,
+				A7C7733E15A805010069C230 /* OLParser.m in Sources */,
+				A7C7734415A805EA0069C230 /* OLSource.m in Sources */,
+				A7C7734715A80DE20069C230 /* OLScanner.m in Sources */,
+				A7C7734A15A80DEB0069C230 /* OLToken.m in Sources */,
+				A7A7BDBB15A8CEE000446912 /* OLCompiler.m in Sources */,
+				A7BAEF5215A8F0320086C129 /* NSString+CharacterUtility.m in Sources */,
+				A7B6491915A93D1E003464C0 /* OLRuntime.m in Sources */,
+				A7B6491D15A93D30003464C0 /* OLEnvironment.m in Sources */,
+				A7584B3515AA39C700BF6F30 /* OLEntity.m in Sources */,
+				A7584B3815AA39D300BF6F30 /* OLValue.m in Sources */,
+				A7584B3B15AA39E000BF6F30 /* OLSymbol.m in Sources */,
+				A7584B3E15AA3A0400BF6F30 /* OLFn.m in Sources */,
+				A7584B4415AA3A2100BF6F30 /* OLString.m in Sources */,
+				A7584B4715AA3A5900BF6F30 /* OLNumber.m in Sources */,
+				A7584B5415AA3ACF00BF6F30 /* OLList.m in Sources */,
+				A7584B5E15AA3B2D00BF6F30 /* OLArray.m in Sources */,
+				A7584B6115AA3B3800BF6F30 /* OLDictionary.m in Sources */,
+				A7584B7115AA6D1C00BF6F30 /* OLForm.m in Sources */,
+				A7584B7515AA7A0900BF6F30 /* OLREPL.m in Sources */,
+				A714868815AAA1AD004A57E5 /* OLBool.m in Sources */,
+				A714868B15AAA355004A57E5 /* OLNamespace.m in Sources */,
+				A714868E15AAA57D004A57E5 /* OLCore.m in Sources */,
+				A714869115AAA77D004A57E5 /* OLInteger.m in Sources */,
+				A714869415AAA790004A57E5 /* OLDouble.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A7C7732015A7F8050069C230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A7C7732115A7F8050069C230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A7C7732315A7F8050069C230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveLisp/ObjectiveLisp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7C7732415A7F8050069C230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveLisp/ObjectiveLisp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7C7730D15A7F8040069C230 /* Build configuration list for PBXProject "ObjectiveLisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C7732015A7F8050069C230 /* Debug */,
+				A7C7732115A7F8050069C230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C7732215A7F8050069C230 /* Build configuration list for PBXNativeTarget "ObjectiveLisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C7732315A7F8050069C230 /* Debug */,
+				A7C7732415A7F8050069C230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7C7730A15A7F8040069C230 /* Project object */;
+}
